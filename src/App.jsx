@@ -5,6 +5,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import IndexPage from './Pages/IndexPage'
 import LoginPage from './Pages/LoginPage'
+import RegisterPage from './Pages/RegisterPage'
 import Layout from './Layout'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Layout/>}>
       <Route index element={<IndexPage />} />
       <Route path='/login' element= {<LoginPage />}/>
+      <Route path='/Register' element= {<RegisterPage />}/>
       </Route>
     </Routes>
   )
